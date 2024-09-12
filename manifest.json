@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Tabs",
+    "version": "1.0.0",
+    "description": "Managing tabs has never been easier. Multiple Tab Selection, URL Extraction, Media Download, Save Tabs, Group Tabs, and much more.",
+    "icons": {
+        "16": "images/tabs-icon-16.png",
+        "32": "images/tabs-icon-32.png",
+        "48": "images/tabs-icon-48.png",
+        "128": "images/tabs-icon-128.png"
+    }
+}
