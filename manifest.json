@@ -8,5 +8,18 @@
         "32": "images/tabs-icon-32.png",
         "48": "images/tabs-icon-48.png",
         "128": "images/tabs-icon-128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/tabs-icon-16-def.png",
+            "32": "images/tabs-icon-32-def.png",
+            "48": "images/tabs-icon-48-def.png",
+            "128": "images/tabs-icon-128-def.png"
+        },
+        "default_title": "Manage Tabs",
+        "default_popup": "templates/popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
     }
 }
