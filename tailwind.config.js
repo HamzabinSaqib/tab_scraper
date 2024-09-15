@@ -8,6 +8,9 @@ module.exports = {
       backgroundImage: {
         'path-image': "url('../assets/Top_Path.png')",
       },
+      fontFamily: {
+        azonix: ['Azonix', 'sans-serif'],
+      },
     },
   },
   plugins: [],

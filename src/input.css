@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('../assets/fonts/Azonix.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.stroke-text {
+    -webkit-text-stroke: 1px rgb(209, 213, 219); /* 3px red stroke */
+    color: transparent;
+    transition: color 0.2s ease-in-out;
+}
+
+.stroke-text:hover {
+    color: rgb(209, 213, 219); /* Gray color on hover */
+}
