@@ -10,11 +10,23 @@
 }
 
 .stroke-text {
-    -webkit-text-stroke: 1px rgb(209, 213, 219); /* 3px red stroke */
+    -webkit-text-stroke: 1px rgb(209, 213, 219);
     color: transparent;
     transition: color 0.2s ease-in-out;
 }
 
 .stroke-text:hover {
-    color: rgb(209, 213, 219); /* Gray color on hover */
+    color: rgb(209, 213, 219);
+}
+
+.open .line1 {
+    transform: rotate(45deg) translate(5px, 10px);
+}
+
+.open .line2 {
+    opacity: 0; /* Hides the middle line */
+}
+
+.open .line3 {
+    transform: rotate(-45deg) translate(5px, -10px);
 }
