@@ -30,3 +30,11 @@
 .open .line3 {
     transform: rotate(-45deg) translate(5px, -10px);
 }
+
+#sync-btn:hover #sync-icon {
+    opacity: 0;
+}
+
+#sync-btn:hover #sync-icon-hover {
+    opacity: 1;
+}
