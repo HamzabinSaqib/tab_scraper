@@ -12,7 +12,7 @@ document.getElementById('sync-btn').addEventListener('click', function() {
     syncIcon.classList.add('rotate');
     syncIconHover.classList.add('rotate');
 
-    let duration = 700;
+    let duration = 1700;
 
     // Simulate processing with a timeout
     setTimeout(() => {

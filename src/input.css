@@ -51,3 +51,22 @@
 .rotate {
     animation: rotate 1s linear infinite;
 }
+
+.hexagon {
+    width: 120px;
+    height: 103.923px;
+    background-color: #70c1752a;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: background-color 0.3s ease;
+}
+
+.hexagon:hover {
+    background-color: #70c175;
+}
+
+.hexagon-inner {
+    width: 116px;
+    height: 100.4589px;
+    background-color: #030712;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}

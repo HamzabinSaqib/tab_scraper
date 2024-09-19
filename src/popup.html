@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/dist/styles.css">
 </head>
 <body class="w-[400px] h-[500px] p-3 bg-gray-950 bg-path-image bg-no-repeat bg-top bg-contain">
-    <div class="flex space-x-24">
+    <!--Header-->
+    <div class="flex space-x-24 mb-12">
         <div class="w-[120px] h-[50px] p-2 flex space-x-6">
             <!--Menu Button-->
             <button id="menu-btn" type="button" title="Menu" class="relative w-8 flex flex-col group">
@@ -16,14 +17,42 @@
                 <div class="line3 w-8 h-1 bg-gray-500 group-hover:bg-gray-200 transform transition duration-300 mt-[0.4rem] rounded-full"></div>
             </button>
             <!--Sync Button-->
-            <button id="sync-btn" type="button" title="Global Sync" class="relative w-[34px] flex">
-                <img id="sync-icon" src="/assets/sync-icon.svg" alt="sync-icon" class="w-[34px] object-contain transition-opacity duration-300">
-                <img id="sync-icon-hover" src="/assets/sync-icon-hover.svg" alt="sync-icon-hover" class="w-[34px] object-contain absolute opacity-0 transition-opacity duration-300">
+            <button id="sync-btn" type="button" title="Global Sync" class="relative w-[33px] pt-[2px] flex">
+                <img id="sync-icon" src="/assets/sync-icon.svg" alt="sync-icon" class="w-[33px] object-contain transition-opacity duration-300">
+                <img id="sync-icon-hover" src="/assets/sync-icon-hover.svg" alt="sync-icon-hover" class="w-[33px] object-contain absolute opacity-0 transition-opacity duration-300">
             </button>
         </div>
         <!--Tabs Text-->
         <div class="w-[150px] h-[52px] pl-1 leading-[52px] text-[52px] font-azonix stroke-text text-center select-none">TABS</div>
-    </div>    
+    </div>
+    <!--Navigation-->
+    <div class="h-[350px] flex flex-col mt-12 p-3 mx-4">
+        <!--Top Half-->
+        <div class="h-[156px] flex mb-[6px]">
+            <div class="hexagon flex justify-center items-center mx-auto">
+                <div class="hexagon-inner"></div>
+            </div>
+            <div class="hexagon flex justify-center items-center absolute mt-[56px] ml-1">
+                <div class="hexagon-inner"></div>
+            </div>
+            <div class="hexagon flex justify-center items-center absolute mt-[56px] ml-[196px]">
+                <div class="hexagon-inner"></div>
+            </div>
+        </div>
+        <!--Bottom Half-->
+        <div class="h-[156px] flex mt-[5px]">
+            <div class="hexagon flex justify-center items-center absolute ml-1">
+                <div class="hexagon-inner"></div>
+            </div>
+            <div class="hexagon flex justify-center items-center absolute ml-[196px]">
+                <div class="hexagon-inner"></div>
+            </div>
+            <div class="hexagon flex justify-center items-center mx-auto mt-[56px]">
+                <div class="hexagon-inner"></div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="./popup.js" type="module"></script>
 </body>
