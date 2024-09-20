@@ -6,21 +6,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+let isSyncing = false;
+
 document.getElementById('sync-btn').addEventListener('click', function() {
+    if (isSyncing) return; // If already syncing, do nothing
+    
+    const button = this;
+    button.title = "Syncing...";
     const syncIcon = document.getElementById('sync-icon');
     const syncIconHover = document.getElementById('sync-icon-hover');
+    const syncIconActive = document.getElementById('sync-icon-active');
+    
+    syncIcon.classList.add('opacity-0');
     syncIcon.classList.add('rotate');
+    syncIconHover.classList.add('opacity-0');
     syncIconHover.classList.add('rotate');
+    syncIconActive.classList.remove('opacity-0');
+    syncIconActive.classList.add('rotate');
 
-    let duration = 1700;
+    let duration = 3700;
+    isSyncing = true;
 
     // Simulate processing with a timeout
     setTimeout(() => {
         // Processing done, remove the rotation class
         syncIcon.classList.remove('rotate');
         syncIconHover.classList.remove('rotate');
+        syncIconActive.classList.remove('rotate');
         syncIcon.style.transform = 'rotate(0deg)';
         syncIconHover.style.transform = 'rotate(0deg)';
+        syncIconActive.style.transform = 'rotate(0deg)';
+        syncIcon.classList.remove('opacity-0');
+        syncIconActive.classList.add('opacity-0');
+        button.title = "Global Sync";
+        isSyncing = false;
     }, duration);
 });
 
