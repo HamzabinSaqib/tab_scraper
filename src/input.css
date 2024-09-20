@@ -86,3 +86,11 @@
 #groups-btn:hover #grouped-tabs-hover {
     opacity: 1;
 }
+
+#standalone-btn:hover #standalone-tabs-icon {
+    opacity: 0;
+}
+
+#standalone-btn:hover #standalone-tabs-hover {
+    opacity: 1;
+}
