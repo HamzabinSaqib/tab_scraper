@@ -94,3 +94,11 @@
 #standalone-btn:hover #standalone-tabs-hover {
     opacity: 1;
 }
+
+#downloads-btn:hover #downloads-icon {
+    opacity: 0;
+}
+
+#downloads-btn:hover #downloads-icon-hover {
+    opacity: 1;
+}
