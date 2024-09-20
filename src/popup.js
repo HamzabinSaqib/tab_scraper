@@ -23,3 +23,35 @@ document.getElementById('sync-btn').addEventListener('click', function() {
         syncIconHover.style.transform = 'rotate(0deg)';
     }, duration);
 });
+
+let blinkInterval;
+let blinkDuration = 300;
+
+document.getElementById('track-btn').addEventListener('click', function() {
+    const button = this;
+    const trackIcon = document.getElementById('track-icon');
+    const trackIconActive = document.getElementById('track-icon-active');
+
+    // Toggle the title
+    if (button.title === "Start Tracking") {
+        button.title = "Stop Tracking";
+
+        // Start blinking
+        blinkInterval = setInterval(() => {
+            if (trackIcon.classList.contains('opacity-0')) {
+                trackIcon.classList.remove('opacity-0');
+                trackIconActive.classList.add('opacity-0');
+            } else {
+                trackIcon.classList.add('opacity-0');
+                trackIconActive.classList.remove('opacity-0');
+            }
+        }, blinkDuration);
+    } else {
+        button.title = "Start Tracking";
+
+        // Stop blinking
+        clearInterval(blinkInterval);
+        trackIcon.classList.remove('opacity-0');
+        trackIconActive.classList.add('opacity-0');
+    }
+});
