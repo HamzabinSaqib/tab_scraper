@@ -70,3 +70,11 @@
     background-color: #030712;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
+
+#track-btn:hover #track-icon {
+    opacity: 0;
+}
+
+#track-btn:hover #track-icon-hover {
+    opacity: 1;
+}

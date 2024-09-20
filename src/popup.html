@@ -26,7 +26,14 @@
         <div class="w-[150px] h-[52px] pl-1 leading-[52px] text-[52px] font-azonix stroke-text text-center select-none">TABS</div>
     </div>
     <!--Navigation-->
-    <div class="h-[350px] flex flex-col mt-12 p-3 mx-4">
+    <div class="h-[350px] flex flex-col mt-12 p-3 mx-4 relative">
+        <!--Track Button-->
+        <div class="absolute flex inset-0 justify-center items-center m-auto">
+            <button id="track-btn" type="button" title="Activate Tracking" class="absolute flex justify-center items-center m-auto">
+                <img id="track-icon" src="/assets/track-icon.svg" alt="track-icon" class="w-14 object-contain transition-opacity duration-300">
+                <img id="track-icon-hover" src="/assets/track-icon-hover.svg" alt="track-icon-hover" class="w-14 object-contain absolute opacity-0 transition-opacity duration-300">
+            </button>
+        </div>
         <!--Top Half-->
         <div class="h-[156px] flex mb-[6px]">
             <div class="hexagon flex justify-center items-center mx-auto">
