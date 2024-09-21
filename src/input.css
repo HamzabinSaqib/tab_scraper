@@ -118,3 +118,11 @@
 #bookmarks-btn:hover #bookmarks-icon-hover {
     opacity: 1;
 }
+
+#settings-btn:hover #settings-icon {
+    opacity: 0;
+}
+
+#settings-btn:hover #settings-icon-hover {
+    opacity: 1;
+}
