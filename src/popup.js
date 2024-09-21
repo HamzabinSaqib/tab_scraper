@@ -1,8 +1,22 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn');
+    const footer = document.getElementById('footer');
+    const header = document.getElementById('header');
+
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle('open');
+
+        const headerBottom = header.getBoundingClientRect().bottom;
+        const targetHeight = window.innerHeight - headerBottom - 30; // 30 pixels below the header
+
+        if (footer.classList.contains('h-0.5')) {
+            footer.classList.remove('h-0.5');
+            footer.style.height = `${targetHeight}px`;
+        } else {
+            footer.style.height = '';
+            footer.classList.add('h-0.5');
+        }
     });
 });
 
@@ -73,23 +87,4 @@ document.getElementById('track-btn').addEventListener('click', function() {
         trackIcon.classList.remove('opacity-0');
         trackIconActive.classList.add('opacity-0');
     }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('menu-btn');
-    const footer = document.getElementById('footer');
-    const header = document.getElementById('header');
-
-    menuBtn.addEventListener('click', () => {
-        const headerBottom = header.getBoundingClientRect().bottom;
-        const targetHeight = window.innerHeight - headerBottom - 30; // 30 pixels below the header
-
-        if (footer.classList.contains('h-0.5')) {
-            footer.classList.remove('h-0.5');
-            footer.style.height = `${targetHeight}px`;
-        } else {
-            footer.style.height = '';
-            footer.classList.add('h-0.5');
-        }
-    });
 });
