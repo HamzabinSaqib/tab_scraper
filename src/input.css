@@ -55,7 +55,7 @@
 .hexagon {
     width: 120px;
     height: 103.923px;
-    background-color: #70c1752a;
+    background-color: #70c17536;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     transition: background-color 0.3s ease;
 }
@@ -65,8 +65,8 @@
 }
 
 .hexagon-inner {
-    width: 116px;
-    height: 100.4589px;
+    width: 115px;
+    height: 99.5929px;
     background-color: #030712;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
