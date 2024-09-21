@@ -102,3 +102,19 @@
 #downloads-btn:hover #downloads-icon-hover {
     opacity: 1;
 }
+
+#history-btn:hover #history-icon {
+    opacity: 0;
+}
+
+#history-btn:hover #history-icon-hover {
+    opacity: 1;
+}
+
+#bookmarks-btn:hover #bookmarks-icon {
+    opacity: 0;
+}
+
+#bookmarks-btn:hover #bookmarks-icon-hover {
+    opacity: 1;
+}
