@@ -11,6 +11,9 @@ module.exports = {
       fontFamily: {
         azonix: ['Azonix', 'sans-serif'],
       },
+      colors: {
+        'primary-green': '#70c175',
+      },
     },
   },
   plugins: [],

@@ -74,3 +74,13 @@ document.getElementById('track-btn').addEventListener('click', function() {
         trackIconActive.classList.add('opacity-0');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const footer = document.getElementById('footer');
+
+    menuBtn.addEventListener('click', () => {
+        footer.classList.toggle('h-0.5');
+        footer.classList.toggle('h-[400px]'); // Adjust the height as needed
+    });
+});
