@@ -78,9 +78,18 @@ document.getElementById('track-btn').addEventListener('click', function() {
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menu-btn');
     const footer = document.getElementById('footer');
+    const header = document.getElementById('header');
 
     menuBtn.addEventListener('click', () => {
-        footer.classList.toggle('h-0.5');
-        footer.classList.toggle('h-[400px]'); // Adjust the height as needed
+        const headerBottom = header.getBoundingClientRect().bottom;
+        const targetHeight = window.innerHeight - headerBottom - 30; // 30 pixels below the header
+
+        if (footer.classList.contains('h-0.5')) {
+            footer.classList.remove('h-0.5');
+            footer.style.height = `${targetHeight}px`;
+        } else {
+            footer.style.height = '';
+            footer.classList.add('h-0.5');
+        }
     });
 });
